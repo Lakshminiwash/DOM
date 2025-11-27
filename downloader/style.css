@@ -1,0 +1,99 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* FULL CENTER */
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* CARD */
+.box {
+    width: 380px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* PROGRESS BAR OUTER */
+.outer {
+    width: 100%;
+    height: 18px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.2);
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.25);
+}
+
+/* PROGRESS INNER */
+.inner {
+    width: 0%;
+    height: 100%;
+    border-radius: 50px;
+
+    background: linear-gradient(90deg, #00e676, #1de9b6);
+    box-shadow: 0 0 10px #1de9b6;
+}
+
+/* SECOND ROW */
+.second {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PERCENT TEXT */
+.second h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+/* BUTTON */
+.second button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+
+    background: #00c2ff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,194,255,0.4);
+}
+
+.second button:hover {
+    background: #7efcff;
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0,194,255,0.6);
+}
