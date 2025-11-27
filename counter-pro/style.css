@@ -1,0 +1,85 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* --- Full screen center --- */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* --- Card Box --- */
+.box {
+    width: 330px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+/* Hover glow */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Counter Number */
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Message text */
+.box p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffecec;
+}
+
+/* Button group */
+.btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #4e54c8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Hover animation */
+.btn button:hover {
+    background: #2f32a6;
+    transform: scale(1.08);
+}
+
+/* Special color for decrease */
+.dec {
+    background: #e04f61;
+}
+
+.dec:hover {
+    background: #c03a4a;
+}
